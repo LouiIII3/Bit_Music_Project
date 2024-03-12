@@ -23,69 +23,6 @@
 
 
 
-
-
-
-<h2>UI(desgin)</h2>
-
-  - We are going to create social media by referring to Instagram.
-  
-
-  - Implementation pictures
-<div align="center">
-  <img width="20%" src="none"/>
-  <img width="20%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0850c060-31ec-4eeb-a99a-bea4dc742a4d"/>
-</div>
-
-<br>
-
-<h2>function</h2>
-
-  - Sign up
-  - Login
-  - Create post
-
-
-
-<br>
-<br>
-<h2>technology used</h2>
-
-- SwiftUI: 
-
-- Springboot: 
-  
-- Mysql: We used MySQL to store user information.
-  
-- Tomcat Server:
-
-- AWS: EC2,Route53,S3
-  
-- Other Materials:
-
-
-<br>
-<br>
-<h2>Code modification date</h2>
-  - 2023.12.15: We have implemented the Instagram UI <br>
-  - 2023.12.24: We have looked into creating posts <br>
-  - 2024.01.06: We have implemented user registration <br>
-  <div align="center">
-  <img width="15%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/d337ff18-1737-4369-8ab9-23b661dceff2"/>
-  <img width="15%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/adc5c39f-706f-4f86-9cbc-d6b038a20b69"/>
-  <img width="15%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/aa314aa9-a234-434a-96f4-72599e364421"/>
-</div>
-  - 2024.01.15: We have implemented login functionality. <br>
-  - 2024.01.25: We have modified the user registration form(userid, password, key1, birthdate, fullName, profeilePicture) <br>
-  - 2024.02.11: We updated the post_create. <br>
-  - 2024.02.26: We have added a part to edit the post.
-
-
-
-
-
-  <br>
-  <br>
   <h2>Added part</h2>
 1. Token Implementation
   
