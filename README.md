@@ -35,3 +35,7 @@ Token-based registration is utilized to enhance authentication and security, fac
    I opted to implement the login and sign-up functionalities directly, without relying on frameworks like Spring Security, to deepen my understanding of the underlying concepts and operational principles.
 
    - By exploring various security and authentication techniques firsthand, I aimed to broaden my understanding of different technologies, contributing to making better decisions regarding technology stacks.
+
+<h2>Problem</h2>
+
+- Failed to import data directly into database
