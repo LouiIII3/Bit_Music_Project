@@ -26,8 +26,6 @@ public class MusicController {
     @Autowired
     private JoinService joinService;
 
-
-
     @GetMapping("/music")
     public ResponseEntity<?> getMusicByHeartRate(@RequestParam int heartRate) {
         // 사용자 인증
