@@ -49,7 +49,6 @@ public class MusicController {
         return ResponseEntity.ok(musicDTO);
     }
 
-
     @GetMapping("/next")
     public ResponseEntity<?> playNextSong() {
 
