@@ -18,7 +18,6 @@
   - <b>Workout Beats provides a feature that allows users to adjust the music according to their workout environment.
     
   - <b>Workout Beats should allow users to stream music in real-time. This requires technologies such as real-time data transmission and processing, buffering, and audio quality management to enhance user experience.
-    
 <br>
 
 
