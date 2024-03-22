@@ -4,7 +4,6 @@
   <img style="width:40%; display:block; margin:0 auto;" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/d4d437dc-888b-4c63-bf61-300d01475d12"/>
 </div>
 
-
 <h2>언어 선택</h2> 
 
 [English](README_EN.md) | [한국어](README_KR.md)
