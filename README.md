@@ -9,7 +9,6 @@
 [English](README_EN.md) | [한국어](README_KR.md)
 
 
-
   <h2>Reason for Creation</h2>
   
   - <b>We offer a variety of genres and tempos of music tailored to users' diverse musical tastes and types of workouts.
