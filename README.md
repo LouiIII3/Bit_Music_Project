@@ -1,7 +1,7 @@
 # Workout-Beates
 
 <div align="center">
-  <img style="width:40%; display:block; margin:0 auto;" src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d353969"/>
+  <img style="width:60%; display:block; margin:0 auto;" src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d353969"/>
 </div>
 
 <h2>언어 선택</h2> 
