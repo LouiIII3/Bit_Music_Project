@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+
 @Repository
 public interface MusicRepository extends JpaRepository<Music, Long> {
     List<Music> findByTempo(String tempo);
