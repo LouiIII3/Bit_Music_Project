@@ -37,4 +37,4 @@ Token-based registration is utilized to enhance authentication and security, fac
 
 - Failed to import data directly into database
 - Database modification
-- 2024/4/2 connect app(ios)
+- 2024/4/2 connect app beta(ios)
