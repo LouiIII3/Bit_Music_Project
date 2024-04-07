@@ -22,12 +22,40 @@
 
   - I created a website using Bootstrap.
   - The navigation bar includes Main, Create Account, Login, and Music.
-  
-
-  - Implementation picture
 <div align="center">
-  <img width="100%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54"/>
+  <img width="70%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54"/>
 </div>
+<br>
+<br>
+  - The registration form comprises fields for entering an ID, email confirmation and sending, verification code confirmation, password, and nickname.
+<div align="center">
+  <img width="70%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb"/>
+</div>
+<br>
+<br>
+  - The login window includes fields for entering an ID and password, as well as a button for forgotten passwords and a button to register. (The option to connect via Facebook is currently not operational.
+<div align="center">
+  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d"/>
+</div>
+
+<br>
+<br>
+  - We offer a music listening window. <br>
+we provide information about various artists and their songs. Users can easily select songs through the song bar and navigate using next or previous buttons. Whenever users wish to listen to a song, they can simply click on the respective button to play it.
+Additionally, users can safely log out through the logout button. Finally, users also have the option to input and send their heart rate directly
+<div align="center">
+  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57"/>
+</div>
+
+<br>
+<br>
+  - When not logged in && When logged in
+<div align="center">
+  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/ed0d4e6b-1177-415b-af3b-d23518a2d27c"/>
+  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4101b585-e050-40ba-9a86-7bcca458bbb5"/>
+</div>
+
+
 
   <h2>Added part</h2>
 1. Token Implementation
