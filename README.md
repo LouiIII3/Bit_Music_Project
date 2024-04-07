@@ -18,7 +18,16 @@
   - <b>Workout Beats should allow users to stream music in real-time. This requires technologies such as real-time data transmission and processing, buffering, and audio quality management to enhance user experience.
 <br>
 
+<h2>UI(desgin)</h2>
 
+  - I created a website using Bootstrap.
+  - The navigation bar includes Main, Create Account, Login, and Music.
+  
+
+  - Implementation picture
+<div align="center">
+  <img width="100%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54"/>
+</div>
 
   <h2>Added part</h2>
 1. Token Implementation
