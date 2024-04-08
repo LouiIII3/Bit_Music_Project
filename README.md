@@ -38,6 +38,7 @@
   <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d"/>
 </div>
 
+
 <br>
 <br>
   - We offer a music listening window. <br>
@@ -46,6 +47,7 @@ Additionally, users can safely log out through the logout button. Finally, users
 <div align="center">
   <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57"/>
 </div>
+
 
 <br>
 <br>
