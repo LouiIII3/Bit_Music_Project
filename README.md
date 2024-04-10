@@ -38,7 +38,6 @@
   <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d"/>
 </div>
 
-
 <br>
 <br>
   - We offer a music listening window. <br>
