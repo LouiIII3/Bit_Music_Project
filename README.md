@@ -40,7 +40,7 @@
 
 <br>
 <br>
-  - We offer a music listening window. <br>
+  - We offer a music listening window.(administrator) <br>
 we provide information about various artists and their songs. Users can easily select songs through the song bar and navigate using next or previous buttons. Whenever users wish to listen to a song, they can simply click on the respective button to play it.
 Additionally, users can safely log out through the logout button. Finally, users also have the option to input and send their heart rate directly
 <div align="center">
