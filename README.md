@@ -70,6 +70,12 @@ Token-based registration is utilized to enhance authentication and security, fac
 
    - By exploring various security and authentication techniques firsthand, I aimed to broaden my understanding of different technologies, contributing to making better decisions regarding technology stacks.
 
+1-3. Adding functionality to provide feedback on human exercise using TensorFlow:
+
+  - I plan to add a feature that uses TensorFlow to give feedback on human exercise.
+
+  - The frontend for this feature will be developed using Vue.js.
+
 <h2>Problem</h2>
 
 - <s>Failed to import data directly into database</s>
