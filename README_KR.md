@@ -74,6 +74,16 @@
 
     이렇게 하면 Vue 프로젝트가 생성됩니다.
 
+<br>
+
+- Tensorflow 모듈 설치 방법:
+
+  Tensorflow 모듈을 설치하려면 다음 명령어를 사용합니다.
+
+  ```sh
+  pip install tensorflow
+  ```
+
 
 <br><br>
 
