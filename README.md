@@ -74,6 +74,14 @@
 
     This will create the Vue project.
 
+<br>
+
+- Installing the Tensorflow module:
+
+  To install the Tensorflow module, use the following command:
+
+  ```sh
+  pip install tensorflow
 
 <br><br>
 
