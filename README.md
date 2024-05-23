@@ -1,84 +1,121 @@
-# Workout-Beates
+# Workout-Beats
 
 <div align="center">
-  <img style="width:60%; display:block; margin:0 auto;" src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d353969"/>
+  <img style="width:40%; display:block; margin:0 auto;" src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d353969"/>
 </div>
 
-<h2>언어 선택</h2> 
+## Language Selection
 
-[English](README.md) | [한국어](README_KR.md)
+[English](README_EN.md) | [한국어](README_KR.md)
 
 
-  <h2>Reason for Creation</h2>
+<br><br>
+
+## Project Introduction and Objectives
+
+- **Diverse Music Selection**: Provides various music genres and tempos tailored to users' diverse tastes and workout types.
   
-  - <b>We offer a variety of genres and tempos of music tailored to users' diverse musical tastes and types of workouts.
-    
-  - <b>Workout Beats provides a feature that allows users to adjust the music according to their workout environment.
-    
-  - <b>Workout Beats should allow users to stream music in real-time. This requires technologies such as real-time data transmission and processing, buffering, and audio quality management to enhance user experience.
-<br>
+- **Hands-free User Experience**: Addresses the inconvenience of using hands to play desired songs during workouts.
 
-<h2>UI(desgin)</h2>
+- **Customized Music for Workouts**: Offers the ability for users to adjust music to fit their workout environment.
 
-  - I created a website using Bootstrap.
-  - The navigation bar includes Main, Create Account, Login, and Music.
-<div align="center">
-  <img width="70%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54"/>
-</div>
-<br>
-<br>
-  - The registration form comprises fields for entering an ID, email confirmation and sending, verification code confirmation, password, and nickname.
-<div align="center">
-  <img width="70%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb"/>
-</div>
-<br>
-<br>
-  - The login window includes fields for entering an ID and password, as well as a button for forgotten passwords and a button to register. (The option to connect via Facebook is currently not operational.
-<div align="center">
-  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d"/>
-</div>
+- **Real-time Streaming**: Enables users to stream music in real-time.
 
-<br>
-<br>
-  - We offer a music listening window.(administrator) <br>
-we provide information about various artists and their songs. Users can easily select songs through the song bar and navigate using next or previous buttons. Whenever users wish to listen to a song, they can simply click on the respective button to play it.
-Additionally, users can safely log out through the logout button. Finally, users also have the option to input and send their heart rate directly
+- **Correct Exercise Postures**: Provides features to ensure users perform exercises correctly. 
+
+
+<br><br>
+
+## Overall Logic
 <div align="center">
-  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57"/>
+  <img style="width:60%; display:block; margin:0 auto;" src="https://github.com/LouiIII3/Running_Music-Project/assets/119919129/19deb815-01e8-46f6-a7b2-4208948fa046"/>
 </div>
 
 
-<br>
-<br>
-  - When not logged in && When logged in
-<div align="center">
-  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/ed0d4e6b-1177-415b-af3b-d23518a2d27c"/>
-  <img width="40%" src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4101b585-e050-40ba-9a86-7bcca458bbb5"/>
-</div>
+<br><br>
 
 
 
-  <h2>Added part</h2>
-1. Token Implementation
-  
-  - The reason for implementing tokens: 
-Token-based registration is utilized to enhance authentication and security, facilitate stateless architecture, separate infrastructure components, improve user experience, and enable consistent authentication across applications.
+## UI Design
 
-1-2. Implementing direct login and sign-up functionality in Version 1.
-   - The reason for directly implementing the login and sign-up functionalities:
-   I opted to implement the login and sign-up functionalities directly, without relying on frameworks like Spring Security, to deepen my understanding of the underlying concepts and operational principles.
+| Image | Description |
+|---|---|
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54" width="1400px" height="200px"> | Developed the website using Bootstrap. The navigation bar includes Main, Create Account, Login, and Music sections. |
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb" width="1400px" height="200px"> | The sign-up form includes fields for ID, email verification and dispatch, authentication code verification, password, and nickname. |
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d" width="400px" height="200px"> | The login page includes fields for ID and password, as well as options for password reset and account registration. (Facebook login option is not yet implemented.) |
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57" width="400px" height="200px"> | Provides a window for listening to music (accessible only to administrators). <br>Provides detailed information about the selected song and artist. Users can easily listen to songs, navigate using next and previous buttons, and click the respective button to listen to desired songs. Users can log out securely and manually input heart rates for transmission. |
+| <img src="https://github.com/LouiIII3/Running_Music-Project/assets/119919129/e3dde5f8-669d-4d6b-a130-4790e025a7c1" width="400px" height="200px"> | Displays exercise data while watching exercise videos. Includes a section for generating QR codes at the bottom of the page. |
 
-   - By exploring various security and authentication techniques firsthand, I aimed to broaden my understanding of different technologies, contributing to making better decisions regarding technology stacks.
 
-1-3. Adding functionality to provide feedback on human exercise using TensorFlow:
 
-  - I plan to add a feature that uses TensorFlow to give feedback on human exercise.
+<br><br>
 
-  - The frontend for this feature will be developed using Vue.js.
+## Usage
 
-<h2>Problem</h2>
+- Integrating Vue in Spring Boot:
 
-- <s>Failed to import data directly into database</s>
-- <s>Database modification</s>
-- <s>2024/4/2 connect app beta(ios)</s>
-- <s>2024/4/3 - 4/5 I am currently contacting AWS regarding a malware attack on the Spring Boot file that was deployed........</s>
+    To neatly organize the Vue project, create a `vue` folder inside your Spring Boot project as follows:
+
+    ```sh
+    mkdir vue
+    ```
+
+    Running this command will create the `vue` folder. Now navigate to the created folder to configure the Vue project:
+
+    ```sh
+    cd vue
+    ```
+
+    To create the Vue project, run the following command:
+
+    ```sh
+    vue init webpack vue-front
+    ```
+
+    This will create the Vue project.
+
+
+<br><br>
+
+## Additional Features
+
+#### 1. Token Implementation
+
+- Token-based registration enhances authentication and security, facilitates stateless architecture, separates infrastructure components, improves user experience, and enables consistent authentication across applications.
+
+#### 2. Direct Login and Registration Feature Implementation in V1 Version
+
+- Decided to implement login and registration features directly without relying on frameworks like Spring Security. This decision was made to deepen understanding of basic concepts and operational principles.
+- By directly exploring various security and authentication technologies, we aim to broaden understanding of different technologies and advance our technology stack.
+
+#### 3. Email Verification Feature Added (2024-04-16)
+
+- Added functionality to verify user email addresses to enhance security. Email verification helps verify user identities and protect access to accounts.
+
+#### 4. Exercise Data Storage Feature Added (2024-05-02)
+
+- Added functionality to store user exercise data, allowing users to record and track their workouts.
+
+#### 5. Exercise Data Collection Feature Added Using Tensorflow (2024-05-10)
+
+- Added functionality to collect and analyze user exercise data using Tensorflow. This feature will help learn and improve user exercise patterns.
+
+#### 6. Exercise Data Transfer Feature Added Using QR Codes (2024-05-13)
+
+- Added functionality to easily transfer exercise data between users using QR codes. This allows users to easily share and compare workout results.
+
+
+<br><br>
+
+## Issues Encountered During Development
+
+- Failed to directly retrieve data from the database.
+- Database modification.
+- App beta (iOS) connection on April 2, 2024.
+- April 3-5, 2024: <br>
+  Identified malware attacks on the Spring Boot files and contacted AWS for assistance.
+- April 10, 2024: <br>
+  Decision to use Spring Security in the Spring Boot project.
+- May 15, 2024: <br>
+  Issue arose with Tensorflow module not functioning correctly after deployment on the server.
+
