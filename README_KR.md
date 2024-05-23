@@ -44,6 +44,7 @@
 | <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb" width="1400px" height="200px"> | 회원가입 양식에는 ID, 이메일 확인 및 발송, 인증코드 확인, 패스워드, 닉네임 등의 필드가 포함되어 있습니다. |
 | <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d" width="400px" height="200px"> | 로그인 페이지에는 ID 및 패스워드 입력란과 비밀번호 재설정 및 회원가입 옵션이 포함되어 있습니다. (Facebook 로그인 옵션은 아직 구현되지 않았습니다.) |
 | <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57" width="400px" height="200px"> | 음악 감상을 위한 창을 제공합니다 (관리자만 접근 가능).<br> 선택한 곡의 아티스트와 상세 정보를 제공합니다. 사용자는 곡 바를 통해 쉽게 곡을 듣고, 다음과 이전 버튼을 사용하여 탐색할 수 있습니다. 사용자는 원하는 곡을 듣기 위해 해당 버튼을 클릭할 수 있습니다. 로그아웃 버튼을 통해 안전하게 로그아웃하고, 사용자는 수동으로 심박수를 입력하여 전송할 수 있습니다. |
+| <img src="https://github.com/LouiIII3/Running_Music-Project/assets/119919129/e3dde5f8-669d-4d6b-a130-4790e025a7c1" width="400px" height="200px"> | 사용자가 운동을 하는 영상을 보고 사용자의 운동 정보를 보여주는 UI입니다. 페이지 하단에는 QR 코드를 생성하는 부분이 포함되어 있습니다. |
 
 
 
