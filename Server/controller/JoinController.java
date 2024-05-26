@@ -20,14 +20,6 @@ public class JoinController {
         this.joinService = joinService;
     }
 
-    //@PostMapping("/join")
-    //public String joinProcess(JoinDTO joinDTO) {
-
-    //    joinService.joinProcess(joinDTO);
-
-     //   return "로그인 되었습니다";
-
-
     //회원가입 되었습니다.
     //@PostMapping("/join")
     //public String joinProcess(@RequestBody JoinDTO joinDTO) {
