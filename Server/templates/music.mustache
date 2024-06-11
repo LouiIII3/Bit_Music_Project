@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음악 페이지</title>
+    <!-- 부트스트랩 CDN 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/web/main">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/web/account">Create Account</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/web/login">Login<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/web/music">Music</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Health</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container d-flex justify-content-center my-4 mb-5">
+    <div id="mobile-box">
+        <!-- Card -->
+        <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img class="card-img-top" src="https://mdbootstrap.com/wp-content/uploads/2019/02/flam.jpg"
+                     alt="Card image cap">
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body text-center">
+                <h5 class="h5 font-weight-bold"><a href="#" target="_blank" id="artist">가수: </a></h5>
+                <p id="title">제목: </p>
+                <audio id="music" preload="true" controls>
+                    <source src="#">
+                </audio>
+                <div id="timeline">
+                    <div id="playhead"></div>
+                </div>
+                <div class="control-buttons">
+                    <button id="prevButton" class="btn btn-primary mr-2">&lt; 이전</button>
+                    <button id="pButton" class="fas fa-play btn btn-primary mr-2"></button>
+                    <button id="nextButton" class="btn btn-primary">&gt; 다음</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card -->
+
+        <!-- 추가된 부분 -->
+        <div class="container mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="btn-group d-flex justify-content-center gap-2" role="group">
+                        <button id="slow" class="btn btn-primary">Slow</button>
+                        <button id="normal" class="btn btn-primary">Normal</button>
+                        <button id="fast" class="btn btn-primary">Fast</button>
+                        <button id="study" class="btn btn-primary">Study</button>
+                        <button id="logout" class="btn btn-danger">로그아웃</button>
+                    </div>
+                    <hr> <!-- 수평 구분선 -->
+                    <div class="mb-3">
+                        <label for="heartRate" class="form-label">심박수 입력</label>
+                        <div class="input-group">
+                            <input type="text" id="heartRate" class="form-control" placeholder="심박수를 입력하세요">
+                            <button id="playByHeartRate" class="btn btn-primary" type="button">심박수에 따른 음악 재생</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Content -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // 사용자의 토큰을 localStorage에서 가져오기
+        var token = localStorage.getItem('token');
+
+        // 만약 토큰이 없으면 로그인 페이지로 리다이렉트
+        if (!token) {
+            alert("로그인이 필요합니다."); // 로그인이 필요함을 알림
+            window.location.href = '/web/login'; // 로그인 페이지로 이동
+        } else {
+            alert("로그인되었습니다."); // 로그인 성공을 알림
+        }
+
+        // AJAX 요청 보내기 전에 토큰을 헤더에 포함시키기
+        $(document).ajaxSend(function (event, xhr, settings) {
+            xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+        });
+
+        $("#music").on('ended', function () {
+            $("#nextButton").click(); // 다음 버튼 클릭 이벤트를 발생시켜 다음 노래를 재생
+        });
+
+        // 심박수에 따른 음악 재생 버튼 클릭 시
+        $("#playByHeartRate").click(function () {
+            var heartRate = $("#heartRate").val();
+            $.ajax({
+                url: "/admin/music?heartRate=" + heartRate,
+                type: "GET",
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader("Authorization", token); // 사용자 토큰 전송
+                },
+                success: function (response) {
+                    $("#title").text("제목: " + response.title);
+                    $("#artist").text("가수: " + response.artist);
+                    $("#albumUrl").attr("src", response.albumUrl);
+                    $("#music").attr("src", response.filePath);
+                    $("#music")[0].play();
+                },
+                error: function (xhr, status, error) {
+                    alert("에러: " + xhr.responseText);
+                }
+            });
+        });
+
+        function sendHeartRate(heartRate) {
+            $.ajax({
+                url: "/admin/music?heartRate=" + heartRate,
+                type: "GET",
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader("Authorization", token); // 사용자 토큰 전송
+                },
+                success: function (response) {
+                    $("#title").text("제목: " + response.title);
+                    $("#artist").text("가수: " + response.artist);
+                    $("#albumUrl").attr("src", response.albumUrl);
+                    $("#music").attr("src", response.filePath);
+                    $("#music")[0].play();
+                },
+                error: function (xhr, status, error) {
+                    alert("에러: " + xhr.responseText);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            // 각 버튼 클릭 시 해당 심박수를 입력란에 자동으로 채우기
+            $("#slow").click(function () {
+                $("#heartRate").val(70);
+                sendHeartRate(70);
+            });
+
+            $("#normal").click(function () {
+                $("#heartRate").val(100);
+                sendHeartRate(100);
+            });
+
+            $("#fast").click(function () {
+                $("#heartRate").val(150);
+                sendHeartRate(150);
+            });
+
+            $("#study").click(function () {
+                $("#heartRate").val(777);
+                sendHeartRate(777);
+            });
+        });
+
+
+        // 로그아웃 버튼 클릭 시
+        $("#logout").click(function () {
+            localStorage.removeItem('token'); // 토큰 제거
+            alert("로그아웃되었습니다."); // 로그아웃을 알림
+            window.location.href = '/web/login'; // 로그인 페이지로 이동
+        });
+
+        //$(window).on('beforeunload', function(){
+        //    // 로그아웃 처리
+        //    localStorage.removeItem('token'); // 토큰 제거
+        //    alert("로그아웃되었습니다."); // 로그아웃을 알림
+        //});
+
+        // 재생 버튼 클릭 시
+        $("#pButton").click(function () {
+            if ($("#music")[0].paused) {
+                $("#music")[0].play();
+            } else {
+                $("#music")[0].pause();
+            }
+        });
+
+        $("#timeline").click(function (event) {
+            var percent = event.offsetX / $("#timeline").width();
+            var newPosition = percent * $("#music")[0].duration;
+            $("#music")[0].currentTime = newPosition;
+        });
+
+        $("#music").on('timeupdate', function () {
+            var currentTime = $("#music")[0].currentTime;
+            var duration = $("#music")[0].duration;
+            var percent = (currentTime / duration) * 100;
+            $("#playhead").css('left', percent + "%");
+        });
+
+        // 이전 버튼 클릭 시
+        $("#prevButton").click(function () {
+            var heartRate = $("#heartRate").val();
+            $.ajax({
+                url: "/admin/previous?heartRate=" + heartRate,
+                type: "GET",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Authorization", token); // 사용자 토큰 전송
+                },
+                success: function(response) {
+                    updateMusicInfo(response);
+                    $("#music")[0].currentTime = 0;
+                },
+                error: function(xhr, status, error) {
+                    alert("에러: " + xhr.responseText);
+                }
+            });
+        });
+
+        // 다음 버튼 클릭 시
+        $("#nextButton").click(function () {
+            var heartRate = $("#heartRate").val();
+            $.ajax({
+                url: "/admin/next?heartRate=" + heartRate,
+                type: "GET",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Authorization", token); // 사용자 토큰 전송
+                },
+                success: function(response) {
+                    updateMusicInfo(response);
+                    $("#music")[0].currentTime = 0;
+                },
+                error: function(xhr, status, error) {
+                    alert("에러: " + xhr.responseText);
+                }
+            });
+        });
+
+        // 서버에서 받아온 음악 정보로 화면 업데이트
+        function updateMusicInfo(response) {
+            $("#title").text("제목: " + response.title);
+            $("#artist").text("가수: " + response.artist);
+            $("#music").attr("src", response.filePath);
+            $("#music")[0].play(); // 음악 재생
+        }
+
+    });
+</script>
+
+</body>
+
+</html>
