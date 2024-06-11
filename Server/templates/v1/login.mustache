@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <!-- 부트스트랩 CDN 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- 추가적인 CSS 파일 링크 -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/web/main">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/web/account">Create Account</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/web/login">Login<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/web/music">Music</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Health</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--화면-->
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                     class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <form id="loginForm">
+                    <!-- Username input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="username" placeholder="아이디를 입력하세요" class="form-control form-control-lg" />
+                        <label class="form-label" for="username">사용자 이름</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="password" placeholder="비밀번호를 입력하세요" class="form-control form-control-lg" />
+                        <label class="form-label" for="password">비밀번호</label>
+                    </div>
+
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                            <label class="form-check-label" for="form1Example3"> 기억하기 </label>
+                        </div>
+                        <a href="/web/reset">비밀번호를 잊으셨나요?</a>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">로그인</button>
+
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0 text-muted">또는</p>
+                    </div>
+
+                    <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+                       role="button">
+                        <i class="fab fa-facebook-f me-2"></i>페이스북으로 계속하기
+                    </a>
+                    <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="/web/account"
+                       role="button">
+                        <i class="fab fa-twitter me-2"></i>회원이 아니신가요?</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // 로그인 폼에서 입력한 사용자 이름과 비밀번호 가져오기
+        var formData = new FormData();
+        formData.append('username', document.getElementById("username").value);
+        formData.append('password', document.getElementById("password").value);
+
+        // 서버로 로그인 요청을 보내고 토큰을 받아오는 비동기 함수 호출
+        loginUser(formData);
+    });
+
+    // 사용자 로그인 요청을 서버에 보내고 토큰을 받아오는 비동기 함수
+    async function loginUser(formData) {
+        try {
+            const response = await fetch('/login', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                const token = response.headers.get('Authorization').split(' ')[1];
+                localStorage.setItem('token', token); // 토큰을 로컬 스토리지에 저장
+                window.location.href = '/web/music'; // 음악 페이지로 이동
+            } else {
+                console.error('로그인 실패:', response.statusText);
+                alert("아이디나 비밀번호가 올바르지 않습니다.");
+            }
+        } catch (error) {
+            console.error('에러 발생:', error);
+        }
+    }
+</script>
+
+</body>
+</html>
+
