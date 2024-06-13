@@ -1,15 +1,20 @@
 # Workout-Beats
-
-<br><br>
-
-### 로고
-| WEB | APP |
-|-------|-------|
-| ![main](https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d353969) | ![main](https://github.com/LouiIII3/web_node.js/assets/119919129/cd06c3ed-bdb6-4c9f-9595-c83ff39909f5) |
-
 ## 언어 선택
 
 [English](README_EN.md) | [한국어](README_KR.md)
+
+<br><br>
+
+
+### 로고
+<div align="center">
+  
+  | WEB | APP |
+  |:---:|:---:|
+  | <img src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d3539694" width="200px" height="200px"> | <img src="https://github.com/LouiIII3/web_node.js/assets/119919129/cd06c3ed-bdb6-4c9f-9595-c83ff39909f5" width="200px" height="200px"> |
+</div>
+
+
 
 
 <br><br>
