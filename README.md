@@ -16,11 +16,6 @@
 </div>
 
 
-## Language Selection
-
-
-[English](README_EN.md) | [한국어](README_KR.md)
-
 <br><br>
 
 ## Project Introduction and Objectives
