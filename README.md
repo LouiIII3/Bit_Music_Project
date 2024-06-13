@@ -1,7 +1,7 @@
 # Workout-Beats
 
-### Logo (iOS)
-| V1 | V2 |
+### Logo
+| WEB | APP |
 |-------|-------|
 | ![main](https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d353969) | ![main](https://github.com/LouiIII3/web_node.js/assets/119919129/cd06c3ed-bdb6-4c9f-9595-c83ff39909f5) |
 
