@@ -12,7 +12,7 @@
   
   | WEB | APP |
   |:---:|:---:|
-  | <img src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d3539694" width="200px" height="200px"> | <img src="https://github.com/LouiIII3/web_node.js/assets/119919129/2727e03f-16ad-45fb-b414-714c65f223ef" width="200px" height="200px"> |
+  | <img src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d3539694" width="200px" height="200px"> | <img src="iOS/Running_App-main2/team_project-main/team_project/Assets.xcassets/logo.imageset/1024.png" width="200px" height="200px"> |
 </div>
 
 
