@@ -155,7 +155,6 @@
 		2B5FCFC72AF0F0F60063C5FA /* team-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "team-project-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2B5FCFCA2AF0FD540063C5FA /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
 		2B61711C2B9365BD00E379F6 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
-		2B61711E2B9368D200E379F6 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		2B6239F72BB0500800D1F325 /* EmailValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationView.swift; sourceTree = "<group>"; };
 		2B6239F92BB05D9D00D1F325 /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
 		2B6239FB2BB0618400D1F325 /* NickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameView.swift; sourceTree = "<group>"; };
@@ -212,7 +211,6 @@
 		2BAD93D92BDE837F00B337D0 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		2BAD93DB2BDE839B00B337D0 /* TabItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemsPreferenceKey.swift; sourceTree = "<group>"; };
 		2BAD93DD2BDF365600B337D0 /* ExerciseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListCell.swift; sourceTree = "<group>"; };
-		2BBB08512B944B7E00BD8074 /* music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music2.mp3; sourceTree = "<group>"; };
 		2BC489982B0623AF00544928 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		2BC4899D2B07250700544928 /* LoginStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStatus.swift; sourceTree = "<group>"; };
 		2BCAB9562BAF192500A30052 /* RecordViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewContainer.swift; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 		2BCAB95A2BAF1B2100A30052 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		2BCAB95C2BAF2FF000A30052 /* RecordRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRoutineView.swift; sourceTree = "<group>"; };
 		2BCAB95E2BAF3C7D00A30052 /* RecordInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInfoView.swift; sourceTree = "<group>"; };
-		2BD241DC2BBD0521002052C2 /* musicAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musicAnimation.json; sourceTree = "<group>"; };
 		2BD241DF2BBE6362002052C2 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		2BE190FB2C0E2D06002D8314 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		2BE5BBB82AEE8D0800C8AD5A /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
@@ -346,13 +343,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2B793A4C2BBE71A900D2768D /* PreView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PreView;
-			sourceTree = "<group>";
-		};
 		2B8B47BC2AF7D4960024D811 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,7 +400,6 @@
 			isa = PBXGroup;
 			children = (
 				2B9C0DE22AE96E6B00DAA0A3 /* team_project */,
-				2B793A4C2BBE71A900D2768D /* PreView */,
 				2B6927C32BA3E7E400A5CAA1 /* team_project_w Watch App */,
 				2B9C0DE12AE96E6B00DAA0A3 /* Products */,
 				2B1825662BA5C35C00FE887A /* Frameworks */,
@@ -437,9 +426,6 @@
 				2B5FCFC72AF0F0F60063C5FA /* team-project-Info.plist */,
 				2B9C0DE32AE96E6B00DAA0A3 /* team_projectApp.swift */,
 				2B9C0DE72AE96E6C00DAA0A3 /* Assets.xcassets */,
-				2BD241DC2BBD0521002052C2 /* musicAnimation.json */,
-				2B61711E2B9368D200E379F6 /* music.mp3 */,
-				2BBB08512B944B7E00BD8074 /* music2.mp3 */,
 				2B9C0DE92AE96E6C00DAA0A3 /* Preview Content */,
 			);
 			path = team_project;
