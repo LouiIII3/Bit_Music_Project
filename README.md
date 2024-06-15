@@ -1,4 +1,4 @@
-# Workout-Beats
+# Beat-Music
 
 ## 언어 선택
 
