@@ -1,4 +1,4 @@
-# Beat-Music
+# Bit-Music
 
 ## 언어 선택
 
