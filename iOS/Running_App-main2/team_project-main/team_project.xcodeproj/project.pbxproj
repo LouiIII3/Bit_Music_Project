@@ -374,6 +374,7 @@
 		2B97ED8C2AF129AB00CEEFE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B5FA1DF2B95802A0034CFC9 /* MusicModel.swift */,
 				2BD241DF2BBE6362002052C2 /* Register.swift */,
 			);
 			path = Model;
@@ -512,7 +513,6 @@
 			children = (
 				2B97ED8F2AF12CAE00CEEFE3 /* RegisterViewModel.swift */,
 				2B97ED8D2AF12A2300CEEFE3 /* ExerciseDefaultModel.swift */,
-				2B5FA1DF2B95802A0034CFC9 /* MusicModel.swift */,
 				2B5FCFC22AF0D4550063C5FA /* LoginViewModel.swift */,
 			);
 			path = ViewModel;

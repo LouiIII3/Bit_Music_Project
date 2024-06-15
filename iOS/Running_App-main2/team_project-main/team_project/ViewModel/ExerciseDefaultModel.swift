@@ -54,32 +54,6 @@ class ExerciseDefaultModel: Identifiable, Hashable {
     }
 }
 
-//protocol RecordContainerProtocol {
-//    var startDate: Date { get }
-//    var endDate: Date { get }
-//    var totalTime: Int { get }
-//    var routineName: String { get }
-//    var exerciseRecordModel: [ExerciseRecordModel] { get }
-//}
-//
-//protocol RxerciseModelProtocol {
-//    var exerciseName: String { get }
-//    var part: [ExercisePart] { get }
-//    var tool: ExerciseTool { get }
-//    var set: Int { get }
-//    var count: [Int] { get }
-//    var kg: [Int] { get }
-//    var done: [Bool] { get }
-//}
-//
-//struct QRContainerData: RecordContainerProtocol {
-//    var startDate: Date
-//    var endDate: Date
-//    var totalTime: Int
-//    var routineName: String
-//    var exerciseRecordModel: [ExerciseRecordModel]
-//}
-
 
 
 @Model

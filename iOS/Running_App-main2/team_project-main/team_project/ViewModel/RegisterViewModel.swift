@@ -13,7 +13,6 @@ class RegisterViewModel {
     @Environment(Register.self) var register
     
     func changeRequestEmailCode(email: String, completion: @escaping (Bool) -> Void) {
-//        let registerData = ["email": email]
         var url = Constants().cmailConfirm2?.absoluteString
         url = (url ?? "") + "?email=\(email)"
         print("요청한 이메일:\(email) + \(url ?? "")")

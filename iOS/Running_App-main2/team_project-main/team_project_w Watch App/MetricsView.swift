@@ -42,6 +42,7 @@ struct MetricsView: View {
                     Spacer()
                     Text(heart(num: workoutManager.heartRate))
                         .font(.callout)
+                    
                         
                 }
                 
