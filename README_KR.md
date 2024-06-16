@@ -90,6 +90,30 @@
   pip install tensorflow
   ```
 
+- watchOS와 iOS 간 데이터 통신 방법
+
+  watchOS에서 데이터를 전송하기 위해서는 다음 프레임워크를 가져옵니다
+
+  ```swift
+    import WatchConnectivity
+  ```
+
+  데이터를 전송하는 코드입니다
+  ```swift
+  func sendMessage(heartRate: [String:Int]) {
+      let session = WCSession.default
+      session.sendMessage(["heartRate":heartRate]) { _ in
+          print("심박수 전송")
+      } errorHandler: { error in
+          print("심박수 보내는데 에러:\(error)")
+      }
+  }
+  ```
+
+  
+
+
+
 
 <br><br>
 
