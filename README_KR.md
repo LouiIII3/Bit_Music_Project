@@ -1,4 +1,4 @@
-# Workout-Beats
+# BIT_MUSIC
 ## 언어 선택
 
 [English](README_EN.md) | [한국어](README_KR.md)
