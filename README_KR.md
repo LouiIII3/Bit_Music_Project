@@ -29,8 +29,6 @@
 
 - **실시간 스트리밍**: 사용자가 음악을 실시간으로 스트리밍할 수 있도록 합니다.
 
-- **올바른 자세로 운동**: 사용자가 올바르게 운동 할 수 있는 기능을 제공합니다. 
-
 
 <br><br>
 
@@ -46,13 +44,13 @@
 
 ## UI 디자인
 
-| 이미지 | 설명 |
-|---|---|
-| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54" width="1400px" height="200px"> | 부트스트랩을 사용하여 웹사이트를 개발했습니다. 네비게이션 바에는 Main, Create Account, Login, Music 섹션이 포함되어 있습니다. |
-| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb" width="1400px" height="200px"> | 회원가입 양식에는 ID, 이메일 확인 및 발송, 인증코드 확인, 패스워드, 닉네임 등의 필드가 포함되어 있습니다. |
-| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d" width="400px" height="200px"> | 로그인 페이지에는 ID 및 패스워드 입력란과 비밀번호 재설정 및 회원가입 옵션이 포함되어 있습니다. (Facebook 로그인 옵션은 아직 구현되지 않았습니다.) |
-| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57" width="400px" height="200px"> | 음악 감상을 위한 창을 제공합니다 (관리자만 접근 가능).<br> 선택한 곡의 아티스트와 상세 정보를 제공합니다. 사용자는 곡 바를 통해 쉽게 곡을 듣고, 다음과 이전 버튼을 사용하여 탐색할 수 있습니다. 사용자는 원하는 곡을 듣기 위해 해당 버튼을 클릭할 수 있습니다. 로그아웃 버튼을 통해 안전하게 로그아웃하고, 사용자는 수동으로 심박수를 입력하여 전송할 수 있습니다. |
-| <img src="https://github.com/LouiIII3/Running_Music-Project/assets/119919129/e3dde5f8-669d-4d6b-a130-4790e025a7c1" width="400px" height="200px"> | 사용자가 운동을 하는 영상을 보고 사용자의 운동 정보를 보여주는 UI입니다. 페이지 하단에는 QR 코드를 생성하는 부분이 포함되어 있습니다. |
+| UI V1 | UI V2 | 설명 |
+|---|------|---|
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7b419e28-3d95-4497-ab24-b5ffbf898d54" width="1400px" height="200px"> | <img src="https://github.com/LouiIII3/Temperature_Humidity-Visualization_Project/assets/119919129/a8aa7d5a-0ede-4dfe-b91a-884d6a9845cb" width="1400px" height="200px"> | 부트스트랩을 사용하여 웹사이트를 개발했습니다. 네비게이션 바에는 Main, Create Account, Login, Music 섹션이 포함되어 있습니다. |
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/7f635c2f-b551-49ff-b368-519ea24577eb" width="1400px" height="200px"> | <img src="https://github.com/LouiIII3/Temperature_Humidity-Visualization_Project/assets/119919129/792d2fac-7bdb-4638-95bf-200691de9dac" width="1400px" height="200px"> | 회원가입 양식에는 ID, 이메일 확인 및 발송, 인증코드 확인, 패스워드, 닉네임 등의 필드가 포함되어 있습니다. |
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/4c7b1b12-176a-432e-b73f-0101e8a16f5d" width="400px" height="200px"> | <img src="https://github.com/LouiIII3/Temperature_Humidity-Visualization_Project/assets/119919129/c43c7f40-2d2c-418a-951e-356680998787" width="400px" height="200px"> | 로그인 페이지에는 ID 및 패스워드 입력란과 비밀번호 재설정 및 회원가입 옵션이 포함되어 있습니다. (Facebook 로그인 옵션은 아직 구현되지 않았습니다.) |
+| <img src="https://github.com/LouiIII3/Social_media_project/assets/119919129/0315797a-0a04-438d-83bc-2e409a0a5f57" width="400px" height="200px"> | <img src="https://github.com/LouiIII3/Temperature_Humidity-Visualization_Project/assets/119919129/31cee02d-ed3f-4033-8164-e07bc6569c5d" width="400px" height="200px"> | 음악 감상을 위한 창을 제공합니다 (관리자만 접근 가능).<br> 선택한 곡의 아티스트와 상세 정보를 제공합니다. 사용자는 곡 바를 통해 쉽게 곡을 듣고, 다음과 이전 버튼을 사용하여 탐색할 수 있습니다. 사용자는 원하는 곡을 듣기 위해 해당 버튼을 클릭할 수 있습니다. 로그아웃 버튼을 통해 안전하게 로그아웃하고, 사용자는 수동으로 심박수를 입력하여 전송할 수 있습니다. |
+| <img src="https://github.com/LouiIII3/Running_Music-Project/assets/119919129/e3dde5f8-669d-4d6b-a130-4790e025a7c1" width="400px" height="200px"> | <img src="https://github.com/LouiIII3/Temperature_Humidity-Visualization_Project/assets/119919129/a6467631-03c0-4a23-823a-42065cd0e5cd" width="400px" height="200px"> | 사용자가 운동을 하는 영상을 보고 사용자의 운동 정보를 보여주는 UI입니다. 페이지 하단에는 QR 코드를 생성하는 부분이 포함되어 있습니다. |
 
 
 
