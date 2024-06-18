@@ -66,7 +66,6 @@ struct RecordInfoView: View {
                 return Int(count) ?? 999
             })
             print("저장된 count: \(selectedExercise.count.description)")
-            
         }
         .onChange(of: done) { oldValue, newValue in
             selectedExercise.done = done
@@ -92,7 +91,7 @@ extension RecordInfoView {
                 
                 Spacer()
             } //HSTACK
-            .padding()
+            .padding(.horizontal)
             
             HStack {
                 VStack {
@@ -107,7 +106,6 @@ extension RecordInfoView {
                                     .frame(minWidth: 50, minHeight: 50, alignment: .center)
                             }
                         } //HSTACK
-//                        .background(.backgroundColor2)
                         
                         Divider()
                         
@@ -123,7 +121,6 @@ extension RecordInfoView {
                                     .keyboardType(.numberPad)
                             }
                         } //VSTACK
-//                        .background(.backgroundColor2)
                         
                         Divider()
                         
@@ -139,7 +136,6 @@ extension RecordInfoView {
                                     .keyboardType(.numberPad)
                             }
                         } //VSTACK
-//                        .background(.backgroundColor2)
                         
                         Divider()
                         
@@ -152,22 +148,26 @@ extension RecordInfoView {
                                 Button(action: {
                                     self.done[index].toggle()
                                 }, label: {
-                                    Image(systemName: self.done[index] ? "checkmark.circle.fill" : "circle")
-                                        .foregroundStyle(self.done[index]
-                                                         ? .green : .gray)
-                                        .frame(minWidth: 50, minHeight: 50, alignment: .center)
+                                    if self.done[index] {
+                                        Image(systemName:"checkmark.circle.fill")
+                                            .foregroundStyle(.green)
+                                            .frame(minWidth: 50, minHeight: 50, alignment: .center)
+                                    } else {
+                                        VStack {
+                                            Spacer()
+                                            Text("미완료")
+                                                .foregroundStyle(Color.white)
+                                            Spacer()
+                                        }
+                                    }
                                 })
-                                
                             }
                         } //VSTACK
-//                        .background(.backgroundColor2)
                         Divider()
                     } //HSTACK
                 } //VSTACK
             } //HSTACK
-            
             .clipShape(RoundedRectangle(cornerRadius: 20))
-            .padding()
             
             if timer.isStarted {
                 if let data = timer.exerciseRoutineContainer {

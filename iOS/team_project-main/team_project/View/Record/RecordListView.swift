@@ -13,9 +13,6 @@ struct RecordListView: View {
     @State private var selected: ExerciseRecordModel?
     var recordContainer: ExerciseRecordContainer
     
-
-    
-    
     var body: some View {
                         
             VStack {
@@ -24,10 +21,9 @@ struct RecordListView: View {
                         RecordInfoView(selectedExercise: record, set: record.set, count: record.count, kg: record.kg, done: record.done)
                     } label: {
                         ReusableCell(pressed: $pressed, selected: $selected, exerciseRecordModel: record)
-//                        .background(.backgroundColor2)
                     }
                     .padding()
-//                    .background(Color.backgroundColor2)
+                    .background(.darkBlack2)
                     .clipShape(.buttonBorder)
                 }
                 
@@ -59,7 +55,9 @@ func recordListView(recordContainer: [ExerciseRecordModel], @Binding pressed: Bo
                     ReusableCell(pressed: $pressed, selected: $selected, exerciseRecordModel: record)
                 }
                 .padding()
+                .background(.darkBlack2)
                 .clipShape(.buttonBorder)
+
             }
             
             Spacer()
@@ -85,10 +83,17 @@ struct ReusableCell: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
-                Text("\(exerciseRecordModel.exerciseName)")
-                    .font(.title2)
-                    .fontWeight(.heavy)
-                    .foregroundColor(.orange)
+                HStack {
+                    Text("\(exerciseRecordModel.exerciseName)")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.orange)
+                    
+                    if !exerciseRecordModel.done.contains(where: { $0 }) {
+                        Text("미완료")
+                            .foregroundStyle(Color.red)
+                    }
+                }
                 
                 HStack {
                     ForEach(exerciseRecordModel.part) { part in
@@ -97,9 +102,10 @@ struct ReusableCell: View {
                             .multilineTextAlignment(.leading)
                             .foregroundStyle(.white)
                     }
+                    
                 }
             }
-            
+
             Spacer()
             
             Button(action: {

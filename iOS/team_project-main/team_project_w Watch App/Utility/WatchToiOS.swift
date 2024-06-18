@@ -64,7 +64,7 @@ extension WatchToiOS: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
-        print("ㅗ긴데")
+        print("긴데")
        
     }
 

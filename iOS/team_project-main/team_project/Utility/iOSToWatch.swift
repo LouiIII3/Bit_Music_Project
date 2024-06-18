@@ -34,16 +34,6 @@ class iOSToWatch: NSObject, ObservableObject {
         print("페어링 여부:\(session.isPaired)")
     }
     
-//    func sendMessage(message: [String:Any]) {
-//        session.sendMessage(message) { heartRate in
-//            DispatchQueue.main.async {
-//                self.bpm = heartRate["heartRate"] as? Int ?? 0
-//            }
-//        } errorHandler: { error in
-//            print(error)
-//        }
-//        
-//    }
 }
 
 extension iOSToWatch: WCSessionDelegate {

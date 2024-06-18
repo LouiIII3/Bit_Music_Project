@@ -37,11 +37,11 @@ struct AddCompletionRoutineView: View {
         if let count = try? dbContext.fetchCount(descriptor), count > 0 {
             return completion(false) // false여야 알림이 뜬다
         }
+        
         // 만일 새로운 데이터라면
         let newExerciseRoutineContainer = ExerciseRoutineContainer(routineName: routineName, exerciseDefaultModel: addingExercises)
         dbContext.insert(newExerciseRoutineContainer)
         return completion(true)
-        
     }
     
     func removeExercise(index: IndexSet) {

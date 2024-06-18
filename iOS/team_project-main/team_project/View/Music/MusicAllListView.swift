@@ -41,6 +41,9 @@ struct MusicAllListView: View {
                             VStack {
                                 HStack {
                                     Text(music.title)
+                                    Text(music.tempo)
+                                        .font(.caption)
+                                        .foregroundStyle(Color.gray)
                                     Spacer()
                                 }
                                 HStack {
