@@ -9,10 +9,10 @@
 ### Logo
 
 <div align="center">
-  
+
   | WEB | APP |
   |:---:|:---:|
-  | <img src="https://github.com/LouiIII3/Workout-Beats-Project/assets/119919129/7f998cac-bc8e-4b8d-ad32-07286d3539694" width="200px" height="200px"> | <img src="https://github.com/user-attachments/assets/02f3c3ec-6649-4281-9312-cda8bc31bba3" width="200px" height="200px"> |
+  | <img src="https://github.com/user-attachments/assets/98ba51c3-bc94-44a3-850a-0b8e9f6fa018" width="200px" height="200px"> | <img src="https://github.com/user-attachments/assets/02f3c3ec-6649-4281-9312-cda8bc31bba3" width="200px" height="200px"> |
 </div>
 
 
