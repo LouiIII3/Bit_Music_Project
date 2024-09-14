@@ -32,6 +32,5 @@ struct CustomTabBarContainerView<Content:View>: View {
 
 #Preview {
     CustomTabBarContainerView(selection: .constant(.home)) {
-//        Color.red
     }
 }

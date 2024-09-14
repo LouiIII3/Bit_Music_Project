@@ -68,25 +68,6 @@ class MusicPlayer: ObservableObject {
         }
     }
     
-    
-    func getMusicFromServerTest80() async {
-        do {
-            var url = Constants().currentmusic!
-            url.append(queryItems: [URLQueryItem(name: "heartRate", value: "80")])
-            let configuration = URLSessionConfiguration.default
-            let token = try KeyChain.get()
-            configuration.httpAdditionalHeaders = ["Authorization": "Bearer " + token.token]
-            let request = try URLRequest(url: url, method: .get)
-            let session = URLSession(configuration: configuration)
-            let (data, _) = try await session.data(for: request)
-            let decoded = try JSONDecoder().decode(MusicInfoModel.self, from: data)
-            await setupMusicInfo(url: URL(string: decoded.filePath)!, info: decoded)
-            print(token.token)
-        } catch {
-            print(error)
-        }
-    }
-    
     func getWithoutBPM(url: URL) {
         do {
             let token = try KeyChain.get()

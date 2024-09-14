@@ -61,7 +61,6 @@
 		2B7EC5492BB868B5000D5DF9 /* MusicInfoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EC5482BB868B5000D5DF9 /* MusicInfoModal.swift */; };
 		2B8106632BEFE7B8001EA677 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 2B8106622BEFE7B8001EA677 /* CodeScanner */; };
 		2B8106642BEFEBE1001EA677 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1825672BA5C35C00FE887A /* WatchConnectivity.framework */; };
-		2B8106682BF08A3D001EA677 /* WatchOSExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8106672BF08A3D001EA677 /* WatchOSExerciseModel.swift */; };
 		2B87CA432BAC902F00A99447 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87CA422BAC902F00A99447 /* TimeManager.swift */; };
 		2B87CA452BAC925A00A99447 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87CA442BAC925A00A99447 /* TimerView.swift */; };
 		2B87CA472BAD2C1000A99447 /* ExerciseAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87CA462BAD2C1000A99447 /* ExerciseAlertView.swift */; };
@@ -96,7 +95,6 @@
 		2BCAB95D2BAF2FF000A30052 /* RecordRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAB95C2BAF2FF000A30052 /* RecordRoutineView.swift */; };
 		2BCAB95F2BAF3C7D00A30052 /* RecordInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAB95E2BAF3C7D00A30052 /* RecordInfoView.swift */; };
 		2BD241E02BBE6362002052C2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD241DF2BBE6362002052C2 /* Register.swift */; };
-		2BE190FC2C0E2D06002D8314 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE190FB2C0E2D06002D8314 /* test.swift */; };
 		2BE5BBB92AEE8D0800C8AD5A /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5BBB82AEE8D0800C8AD5A /* ExerciseListView.swift */; };
 		2BEC5B822B01FF6F00D45CBE /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEC5B812B01FF6F00D45CBE /* JWTDecode */; };
 		2BF47AC02BB2F20F00C00A2D /* RoutineListViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF47ABF2BB2F20F00C00A2D /* RoutineListViewWatch.swift */; };
@@ -180,7 +178,6 @@
 		2B7B84732BE8C80E0095BD03 /* StartingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingTimerView.swift; sourceTree = "<group>"; };
 		2B7EC5462BB82596000D5DF9 /* ReusableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableListView.swift; sourceTree = "<group>"; };
 		2B7EC5482BB868B5000D5DF9 /* MusicInfoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfoModal.swift; sourceTree = "<group>"; };
-		2B8106672BF08A3D001EA677 /* WatchOSExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSExerciseModel.swift; sourceTree = "<group>"; };
 		2B87CA422BAC902F00A99447 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		2B87CA442BAC925A00A99447 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		2B87CA462BAD2C1000A99447 /* ExerciseAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAlertView.swift; sourceTree = "<group>"; };
@@ -217,7 +214,6 @@
 		2BCAB95C2BAF2FF000A30052 /* RecordRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRoutineView.swift; sourceTree = "<group>"; };
 		2BCAB95E2BAF3C7D00A30052 /* RecordInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInfoView.swift; sourceTree = "<group>"; };
 		2BD241DF2BBE6362002052C2 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		2BE190FB2C0E2D06002D8314 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		2BE5BBB82AEE8D0800C8AD5A /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 		2BF47ABF2BB2F20F00C00A2D /* RoutineListViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineListViewWatch.swift; sourceTree = "<group>"; };
 		2BF47AC12BB2F67400C00A2D /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
@@ -325,7 +321,6 @@
 				2BF47AC12BB2F67400C00A2D /* SummaryView.swift */,
 				2BF47AC32BB2F69500C00A2D /* ActivityRingsView.swift */,
 				2B6927DC2BA41BDD00A5CAA1 /* ControlView.swift */,
-				2B8106672BF08A3D001EA677 /* WatchOSExerciseModel.swift */,
 				2B6927C82BA3E7E500A5CAA1 /* Assets.xcassets */,
 				2B6927CA2BA3E7E500A5CAA1 /* Preview Content */,
 			);
@@ -349,7 +344,6 @@
 				2BAD93D72BDE828C00B337D0 /* CustomTabBarView.swift */,
 				2BAD93D92BDE837F00B337D0 /* CustomTabBarContainerView.swift */,
 				2BAD93DB2BDE839B00B337D0 /* TabItemsPreferenceKey.swift */,
-				2BE190FB2C0E2D06002D8314 /* test.swift */,
 				2B5FCFBF2AF0D3BE0063C5FA /* LoginRegisterView */,
 				2BABF6A92AED55FA00CD88CE /* Home */,
 				2BABF69A2AEA71C000CD88CE /* Setting */,
@@ -650,7 +644,6 @@
 				2B6927C72BA3E7E400A5CAA1 /* ContentView.swift in Sources */,
 				2B91ABB22BB458BF00E23E6D /* RoutineStatusView.swift in Sources */,
 				2B6927DF2BA41C8700A5CAA1 /* SelectingView.swift in Sources */,
-				2B8106682BF08A3D001EA677 /* WatchOSExerciseModel.swift in Sources */,
 				2B6927DB2BA41A9100A5CAA1 /* SessionPagingView.swift in Sources */,
 				2B6927D52BA3E88900A5CAA1 /* WatchToiOS.swift in Sources */,
 				2B6927E12BA4242B00A5CAA1 /* WorkoutManager.swift in Sources */,
@@ -666,7 +659,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B793A4D2BBE722F00D2768D /* PreviewContainer.swift in Sources */,
-				2BE190FC2C0E2D06002D8314 /* test.swift in Sources */,
 				2B793A4B2BBE6FE200D2768D /* Assets.xcassets in Sources */,
 				2B6239F82BB0500800D1F325 /* EmailValidationView.swift in Sources */,
 				2B97ED932AF12D9F00CEEFE3 /* Constants.swift in Sources */,
